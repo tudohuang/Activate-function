@@ -7,12 +7,12 @@ def tanh(x):
 def arctan(x):
     return np.arctan(x)
 def step(x):
-  return 1 if x > 0 else x =0
+    return 1 if x > 0 else 0
 x_values = np.linspace(-1, 1, 100)
 plt.plot(x, σ(x), label='σ(x)')
 plt.plot(x, tanh(x), label='tanh(x)')
 plt.plot(x,arctan(x),label = 'ArcTan(x)')
-plt.plot(x_values,step(x_values),label = 'Step(x)')
+plt.plot(x_values,([step(x) for x in x_values]),label = 'Step(x)')
 plt.legend()
 plt.grid(True)
 plt.show()
